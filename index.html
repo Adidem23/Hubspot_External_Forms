@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HubSpot Form Example</title>
+</head>
+
+<!-- HubSpot tracking code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/243864514.js"></script>
+
+<body>
+  <form id="myForm">
+    <input type="text" name="firstname" placeholder="First Name">
+    <input type="text" name="lastname" placeholder="Last Name">
+    <input type="email" name="email" placeholder="Email">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+<script>
+     document.getElementById("myForm").addEventListener("submit", function(event) {
+          event.preventDefault();
+     });
+</script>
+</html>
 
